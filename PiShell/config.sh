@@ -6,7 +6,7 @@
     export INSTALLATION_PATH=~/
 
     # PiShell scripts directory
-    export PI_SHELL_PATH=/root/PiShell
+    export PI_SHELL_PATH=/root/raspi/PiShell
 
     # Terminal colors
     export PI_SHELL_CLR_HEAD='\033[34m'

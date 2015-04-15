@@ -9,6 +9,7 @@
     
     # Module repositories
     SAILBOT_REPO_MODULES=(
+	Compass
         ruddercommand 
         sailcommand 
         dbhandler 
