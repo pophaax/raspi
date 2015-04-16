@@ -33,7 +33,7 @@
     do
             case $option in
                 Yes ) printf "$PI_SHELL_CLR_INFO\nCreating database in $PI_SHELL_CLR_DIR$INSTALLATION_PATH$SAILBOT_REPO_MAIN/$PI_SHELL_CLR_INFO\n"
-                                    if sqlite3 asr.db < $DIR/createtables.sql;
+                                    if sqlite3 asr.db < $INSTALLATION_PATHraspi/createtables.sql;
                                     then print_result true; else print_result false; break; fi
                                     printf "$PI_SHELL_CLR_ASK\nServer settings:\n$PI_SHELL_CLR_OPT"
                                     read -p "Boat name: " BOATID

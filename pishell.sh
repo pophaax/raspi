@@ -3,7 +3,7 @@
     # PiShell startup script
 
     # Config script
-    source config.sh
+    source PiShell/config.sh
     
     # Show welcome message
     printf "\n$PI_SHELL_CLR_HEAD"
@@ -23,4 +23,5 @@
     printf "$PI_SHELL_CLR_INFO"
     
     # Launch menu
-     ./menu.sh
+    cd $PI_SHELL_PATH
+    ./menu.sh
