@@ -18,4 +18,6 @@
         gps 
         coursecalculation
         httpsync
+	models
+	xmlparser
     )
