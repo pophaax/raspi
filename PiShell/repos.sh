@@ -1,6 +1,6 @@
 
     # Aland Sailing Robot #
-    # Modules config file #
+    # Repositories config file #
     
     #-----------------------------------------------------
     
