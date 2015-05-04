@@ -4,6 +4,8 @@
     
     #-----------------------------------------------------------    
     
+    source repos.sh
+    
     opt_daemon_create ()
     {
             echo "Creating asr.service file..."
