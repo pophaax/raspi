@@ -8,7 +8,6 @@
     
     opt_daemon_create ()
     {
-            echo "Creating asr.service file..."
             echo "[Unit]" >> asr.service
             echo "Description=sailingrobot" >> asr.service
             echo "Requires=gpsd.service" >> asr.service
@@ -16,7 +15,6 @@
             echo "" >> asr.service
             echo "[Service]" >> asr.service
             echo "Type=simple" >> asr.service
-            echo "ExecStart=$INSTALLATION_PATH$SAILBOT_REPO_MAIN/sr"
             echo "ExecStart=$INSTALLATION_PATH$SAILBOT_REPO_MAIN/sr" >> asr.service
             echo "RestartSec=5" >> asr.service
             echo "Restart=on-failure" >> asr.service
