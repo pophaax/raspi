@@ -21,4 +21,5 @@
 	models
 	xmlparser
 	thread
+	logger
     )
