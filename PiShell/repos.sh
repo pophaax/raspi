@@ -20,4 +20,5 @@
         httpsync
 	models
 	xmlparser
+	thread
     )
