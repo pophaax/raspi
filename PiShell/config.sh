@@ -8,10 +8,7 @@
     export INSTALLATION_PATH=~
 
     # PiShell scripts directory
-    export PI_SHELL_PATH=/root/raspi/PiShell
-
-    # Raspberry repository directory
-    export PI_REPO_PATH=/root/raspi
+    export PI_SHELL_PATH=$INSTALLATION_PATH/raspi/PiShell
 
     # Terminal colors
     export PI_SHELL_CLR_HEAD='\033[34m'

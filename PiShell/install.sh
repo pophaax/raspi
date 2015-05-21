@@ -48,6 +48,9 @@
             esac
     done
     
+    printf "$PI_SHELL_CLR_INFO\nCreating pishell symlink\n"
+    ln -s $PI_SHELL_PATH/pishell.sh /usr/bin/pishell
+
     # Return to menu
     cd $PI_SHELL_PATH
     ./menu.sh
