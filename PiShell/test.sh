@@ -4,7 +4,8 @@
     #--------------------------------#
     # Make and run testsuite
 
-    cd $INSTALLATION_PATH/$tests
+    printf "$PI_SHELL_CLR_OK\nCreating test suite...\n"
+    cd $INSTALLATION_PATH/$SAILBOT_REPO_MAIN/$tests
         if "make"
         then
             printf "$PI_SHELL_CLR_OK"
