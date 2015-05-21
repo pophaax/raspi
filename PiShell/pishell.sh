@@ -5,7 +5,7 @@
     # Main script
 
     # Config script
-    source config.sh
+    source $PI_SHELL_PATH/config.sh
     
     # Show welcome message
     printf "\n$PI_SHELL_CLR_HEAD"
