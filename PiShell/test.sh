@@ -5,7 +5,7 @@
     # Make and run testsuite
 
     cd $INSTALLATION_PATH/$tests
-        if "make test"
+        if "make"
         then
             printf "$PI_SHELL_CLR_OK"
             printf "Test created ok executing...\n"
