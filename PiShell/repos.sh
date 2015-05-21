@@ -1,15 +1,15 @@
+ 
+    #      Aland Sailing Robot       #
+    # RaspberryPi Management Scripts #
+    #--------------------------------#
+    # List of repos
 
-    # Aland Sailing Robot #
-    # Repositories config file #
-    
-    #-----------------------------------------------------
-    
     # Main repository
     SAILBOT_REPO_MAIN=sailingrobot
     
     # Module repositories
     SAILBOT_REPO_MODULES=(
-	Compass
+    	Compass
         ruddercommand 
         sailcommand 
         dbhandler 
@@ -18,8 +18,9 @@
         gps 
         coursecalculation
         httpsync
-	models
-	xmlparser
-	thread
-	logger
+    	models
+    	xmlparser
+    	thread
+    	logger
+        tests
     )

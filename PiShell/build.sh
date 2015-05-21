@@ -1,12 +1,12 @@
 
-    # Aland Sailing Robot #
-    # Sailbot build script
-
-    #-----------------------------------------------------------
+    #      Aland Sailing Robot       #
+    # RaspberryPi Management Scripts #
+    #--------------------------------#
+    # Make binaries
     
    source repos.sh
     
-    run_test_if_ok()
+    print_status()
     {
         if $1
         then
@@ -23,7 +23,7 @@
         do
             cd $MODULE
             printf "$PI_SHELL_CLR_INFO\nMaking tests for module $PI_SHELL_CLR_DIR$MODULE in $PI_SHELL_CLR_DIR$INSTALLATION_PATH$SAILBOT_REPO_MAIN/$MODULE/$PI_SHELL_CLR_INFO\n"
-            run_test_if_ok "make"
+            print_status "make"
             cd ..
         done
 

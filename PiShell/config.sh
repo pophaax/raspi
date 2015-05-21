@@ -1,9 +1,11 @@
 
-    # Aland Sailing Robot #
-    # PiShell config file #
+    #      Aland Sailing Robot       #
+    # RaspberryPi Management Scripts #
+    #--------------------------------#
+    # Configuration
 
     # Main Installation directory
-    export INSTALLATION_PATH=~/
+    export INSTALLATION_PATH=~
 
     # PiShell scripts directory
     export PI_SHELL_PATH=/root/raspi/PiShell

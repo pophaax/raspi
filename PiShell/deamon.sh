@@ -1,8 +1,8 @@
-
-    # Aland Sailing Robot #
-    # Raspberry Pi  deamon script #
-    
-    #-----------------------------------------------------------    
+ 
+    #      Aland Sailing Robot       #
+    # RaspberryPi Management Scripts #
+    #--------------------------------#
+    # Deamon install/remove
     
     source repos.sh
     
@@ -18,6 +18,7 @@
             echo "ExecStart=$INSTALLATION_PATH$SAILBOT_REPO_MAIN/sr" >> asr.service
             echo "RestartSec=5" >> asr.service
             echo "Restart=on-failure" >> asr.service
+            echo "KillSignal=SIGINT" >> asr.service
             echo "" >> asr.service
             echo "[Install]" >> asr.service
             echo "WantedBy=multi-user.target" >> asr.service

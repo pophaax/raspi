@@ -1,8 +1,8 @@
-
-    # Aland Sailing Robot #
-    # Sailbot repository update script #
-
-    #-------------------------------------------------------------
+   
+    #      Aland Sailing Robot       #
+    # RaspberryPi Management Scripts #
+    #--------------------------------#
+    # Update repositoíes
     
     source repos.sh
 
