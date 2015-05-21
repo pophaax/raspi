@@ -24,7 +24,7 @@
     cd $SAILBOT_REPO_MAIN
     for MODULE in ${SAILBOT_REPO_MODULES[@]}
     do
-            printf "$PI_SHELL_CLR_INFO\nDownloading module repository $PI_SHELL_CLR_DIR$MODULE$PI_SHELL_CLR_INFO into $PI_SHELL_CLR_DIR$SAILBOT_INSTALLATION_PATH/$SAILBOT_REPO_MAIN/$MODULE/$PI_SHELL_CLR_INFO\n"
+            printf "$PI_SHELL_CLR_INFO\nDownloading module repository $PI_SHELL_CLR_DIR$MODULE$PI_SHELL_CLR_INFO into $PI_SHELL_CLR_DIR$INSTALLATION_PATH/$SAILBOT_REPO_MAIN/$MODULE/$PI_SHELL_CLR_INFO\n"
             print_result "git clone https://github.com/pophaax/$MODULE"
     done
 
