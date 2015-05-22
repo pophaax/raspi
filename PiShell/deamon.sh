@@ -15,7 +15,7 @@
             echo "" >> asr.service
             echo "[Service]" >> asr.service
             echo "Type=simple" >> asr.service
-            echo "ExecStart=$INSTALLATION_PATH$SAILBOT_REPO_MAIN/sr" >> asr.service
+            echo "ExecStart=$INSTALLATION_PATH/$SAILBOT_REPO_MAIN/sr" >> asr.service
             echo "RestartSec=5" >> asr.service
             echo "Restart=on-failure" >> asr.service
             echo "KillSignal=SIGINT" >> asr.service
