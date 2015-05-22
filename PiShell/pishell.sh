@@ -5,7 +5,7 @@
     # Main script
 
     # Config script
-    source $PI_SHELL_PATH/config.sh
+    if [ -z "$PI_SHELL_PATH" ]; then source config.sh; else source $PI_SHELL_PATH/config.sh; fi
     
     # Show welcome message
     printf "\n$PI_SHELL_CLR_HEAD"
