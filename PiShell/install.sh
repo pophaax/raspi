@@ -51,7 +51,10 @@
     printf "$PI_SHELL_CLR_INFO\nCreating pishell symlink\n"
     ln -s $PI_SHELL_PATH/pishell.sh /usr/bin/pishell
 
-    printf("Installation done, use pishell command to show menu\n")
+    print "Saving PI_SHELL_PATH to profile\n"
+    echo "export PI_SHELL_PATH=$INSTALLATION_PATH/raspi/PiShell" >> ~/.profile
+
+    printf "Installation done, use pishell command to show menu\n"
     # Return to menu
     cd $PI_SHELL_PATH
     ./menu.sh
