@@ -54,7 +54,7 @@
     printf "Saving PI_SHELL_PATH to profile\n"
     echo "export PI_SHELL_PATH=$INSTALLATION_PATH/raspi/PiShell" >> ~/.profile
 
-    printf "$PI_SHELL_CLR_OKInstallation done, use pishell command to show menu\n"
+    printf "$PI_SHELL_CLR_OK\nInstallation done, use pishell command to show menu\n"
     # Return to menu
     cd $PI_SHELL_PATH
     ./menu.sh
