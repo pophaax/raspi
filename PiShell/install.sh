@@ -32,17 +32,20 @@
     select option in "Yes" "No"
     do
             case $option in
-                Yes ) printf "$PI_SHELL_CLR_INFO\nCreating database in $PI_SHELL_CLR_DIR$INSTALLATION_PATH/$SAILBOT_REPO_MAIN/ from $PI_REPO_PATH/createtables.sql$PI_SHELL_CLR_INFO\n"
-                                    if sqlite3 $INSTALLATION_PATH/$SAILBOT_REPO_MAIN/asr.db < $PI_SHELL_PATH/../createtables.sql;
-                                    then print_result true; else print_result false; break; fi
-                                    printf "$PI_SHELL_CLR_ASK\nServer settings:\n$PI_SHELL_CLR_OPT"
-                                    read -p "Boat name: " BOATID
-                                    read -p "Boat password: " BOATPWD
-                                    read -p "Server address: " SRVADDR
-                                    printf "$PI_SHELL_CLR_INFO"
-                                    if sqlite3 asr.db "INSERT INTO server(id, boat_id, boat_pwd, srv_addr) VALUES('1', '$BOATID', '$BOATPWD', '$SRVADDR')";
-                                    then print_result true; else print_result false; fi
-                                    break;;
+                Yes ) 
+                        printf "$PI_SHELL_CLR_INFO\nDownloading sql script...\n"
+                        wget https://raw.githubusercontent.com/pophaax/installation/master/createtables.sql
+                        printf "$PI_SHELL_CLR_INFO\nCreating database in $PI_SHELL_CLR_DIR$INSTALLATION_PATH/$SAILBOT_REPO_MAIN/ from $PI_REPO_PATH/createtables.sql$PI_SHELL_CLR_INFO\n"
+                                if sqlite3 $INSTALLATION_PATH/$SAILBOT_REPO_MAIN/asr.db < createtables.sql;
+                                then print_result true; else print_result false; break; fi
+                                printf "$PI_SHELL_CLR_ASK\nServer settings:\n$PI_SHELL_CLR_OPT"
+                                read -p "Boat name: " BOATID
+                                read -p "Boat password: " BOATPWD
+                                read -p "Server address: " SRVADDR
+                                printf "$PI_SHELL_CLR_INFO"
+                                if sqlite3 asr.db "INSERT INTO server(id, boat_id, boat_pwd, srv_addr) VALUES('1', '$BOATID', '$BOATPWD', '$SRVADDR')";
+                                then print_result true; else print_result false; fi
+                                break;;
                     No ) printf "$PI_SHELL_CLR_INFO\nSkipping database\n"
                                     break;;
             esac
