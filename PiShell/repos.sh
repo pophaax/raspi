@@ -23,4 +23,5 @@
     	thread
     	logger
         tests
+	utility
     )

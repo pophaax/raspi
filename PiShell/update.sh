@@ -18,6 +18,7 @@
         fi
     }
 
+#    cd $HOME/sailingrobots
     cd $INSTALLATION_PATH/$SAILBOT_REPO_MAIN
     printf "$PI_SHELL_CLR_INFO\nUpdating project repository $PI_SHELL_CLR_DIR$SAILBOT_REPO_MAIN$PI_SHELL_CLR_INFO in $PI_SHELL_CLR_DIR$INSTALLATION_PATH/$SAILBOT_REPO_MAIN/$PI_SHELL_CLR_INFO\n"
     print_result "git pull"
