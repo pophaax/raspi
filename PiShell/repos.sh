@@ -23,5 +23,7 @@
     	thread
     	logger
         tests
-	utility
+        waypointrouting
+        windvanecontroller
+	    utility
     )
