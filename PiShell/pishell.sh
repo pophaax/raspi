@@ -25,8 +25,8 @@
     printf "$PI_SHELL_CLR_INFO"
     
     # Set date
-    printf "\n What date is it? (i.e.: 15 Apr 2016 15:20)"
-    read -p "#> " DATE
+    printf "\n\n What date is it? (i.e.: 15 Apr 2016 15:20)"
+    read -p "\n#> " DATE
     date --set "$DATE"
 
     # Launch menu
