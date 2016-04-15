@@ -10,6 +10,9 @@
     # PiShell scripts directory
     export PI_SHELL_PATH=$INSTALLATION_PATH/raspi/PiShell
 
+    # Sailing robot root directory
+    export SAILINGROBOTS_HOME=~/sailingrobot
+
     # Terminal colors
     export PI_SHELL_CLR_HEAD='\033[34m'
     export PI_SHELL_CLR_INFO='\033[35m'
