@@ -6,6 +6,8 @@
     
     source repos.sh
     
+    DB_PATH=dbhandler
+
     print_result()
     {
             if $1
@@ -27,6 +29,10 @@
             printf "$PI_SHELL_CLR_INFO\nDownloading module repository $PI_SHELL_CLR_DIR$MODULE$PI_SHELL_CLR_INFO into $PI_SHELL_CLR_DIR$INSTALLATION_PATH/$SAILBOT_REPO_MAIN/$MODULE/$PI_SHELL_CLR_INFO\n"
             print_result "git clone https://github.com/pophaax/$MODULE"
     done
+    
+    cd $DB_PATH
+    printf "$PI_SHELL_CLR_INFO\nDownloading json from https://github.com/nlohmann into $PI_SHELL_CLR_DIR$INSTALLATION_PATH$REPO_MAIN/$DB_PATH/$PI_SHELL_CLR_INFO\n"
+    print_result "git clone https://github.com/nlohmann/json.git"
 
     printf "$PI_SHELL_CLR_ASK\nDo you wish to create a database?\n$PI_SHELL_CLR_OPT"
     select option in "Yes" "No"
