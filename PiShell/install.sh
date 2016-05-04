@@ -33,6 +33,7 @@
     cd $DB_PATH
     printf "$PI_SHELL_CLR_INFO\nDownloading json from https://github.com/nlohmann into $PI_SHELL_CLR_DIR$INSTALLATION_PATH$REPO_MAIN/$DB_PATH/$PI_SHELL_CLR_INFO\n"
     print_result "git clone https://github.com/nlohmann/json.git"
+    cd ..
 
     printf "$PI_SHELL_CLR_ASK\nDo you wish to create a database?\n$PI_SHELL_CLR_OPT"
     select option in "Yes" "No"
