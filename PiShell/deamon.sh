@@ -12,6 +12,7 @@
             echo "Description=sailingrobot" >> asr.service
             echo "Requires=gpsd.service" >> asr.service
             echo "After=gpsd.service" >> asr.service
+	    echo "After=network.target" >>asr.service
             echo "" >> asr.service
             echo "[Service]" >> asr.service
             echo "Type=simple" >> asr.service
